@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <!-- ROOT -->
     <menuitem
         id="menu_developers_management_root"
         name="Developers Managements"
         sequence="0"
     />
 
+    <!-- By model -->
     <menuitem
         id="menu_developers"
         name="Developers"
@@ -13,6 +15,7 @@
         sequence="0"
     />
 
+    <!-- Actions -->
     <menuitem
         id="menu_view_developers"
         name="View Developers"
@@ -26,6 +29,21 @@
         name="Add Developer"
         action="action_add_developer_form"
         parent="menu_developers"
-        sequence="1"
+        sequence="10"
+    />
+
+    <menuitem
+        id="menu_view_companies"
+        name="View Companies"
+        action="action_company_management"
+        parent="menu_developers"
+        sequence="20"
+    />
+    <menuitem
+        id="menu_companies_add"
+        name="Add Company"
+        action="action_add_company_form"
+        parent="menu_developers"
+        sequence="30"
     />
 </odoo>

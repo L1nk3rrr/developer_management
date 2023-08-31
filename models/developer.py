@@ -30,6 +30,11 @@ class Developer(models.Model):
     email = fields.Char(string='Email')
     address = fields.Text(string='Address')
     birthdate = fields.Date(string='Birthdate')
+    dev_company_id = fields.Many2one(
+        comodel_name='developers.management.company',
+        string='Company',
+        required=False,
+    )
 
     _sql_constraints = [
         ('uniq_developer_name', 'unique(name)', 'Name of Developer must be unique')

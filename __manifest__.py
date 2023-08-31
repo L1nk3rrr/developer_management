@@ -24,6 +24,10 @@ enhancing your ability to manage and collaborate effectively.
         'security/ir.model.access.csv',
 
         'views/developer.xml',
+        'views/company.xml',
         'views/menu.xml',
+    ],
+    'test': [
+        'tests/test_developers_management.py',
     ],
 }
