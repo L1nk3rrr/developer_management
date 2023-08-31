@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_developers_management_developer,access_developers_management_developer,model_developers_management_developer,base.group_user,1,1,1,0
